@@ -1,5 +1,0 @@
-tt_content.fourthcol =< lib.contentElement
-tt_content.fourthcol {
-	templateName = fourthcol
-	dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
-}

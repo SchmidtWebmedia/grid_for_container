@@ -1,5 +1,0 @@
-tt_content.threecol =< lib.contentElement
-tt_content.threecol {
-	templateName = threecol
-	dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
-}

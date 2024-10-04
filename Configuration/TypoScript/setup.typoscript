@@ -1,10 +1,11 @@
-@import 'EXT:grid_for_container/Configuration/TypoScript/Container'
-
-lib.contentElement {
+tt_content.onecol =< lib.contentElement
+tt_content.onecol {
 	templateRootPaths {
 		200 = EXT:grid_for_container/Resources/Private/Templates/
 	}
-	partialRootPaths {
-		200 = EXT:grid_for_container/Resources/Private/Partials/
-	}
+	templateName = GridColumns
+	dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
 }
+tt_content.twocol =< tt_content.onecol
+tt_content.threecol =< tt_content.onecol
+tt_content.fourthcol =< tt_content.onecol

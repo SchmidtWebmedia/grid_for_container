@@ -1,5 +1,0 @@
-tt_content.twocol =< lib.contentElement
-tt_content.twocol {
-	templateName = twocol
-	dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
-}
