@@ -1,12 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 namespace SchmidtWebmedia\GridForContainer\Controller;
 
 use SchmidtWebmedia\GridForContainer\Utility\JsonUtility;
 
 class GridController
 {
-
     private static ?array $GridConfiguration = null;
 
     public function getColumnOptions($config) : array {

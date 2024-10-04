@@ -1,14 +1,14 @@
 {
   "cols": [
     {
-	  "onecol": [
-		{
-			"label": "100",
-			"class": [
-				"col-xs-12"
-			]
-		}
-	  ],
+    "onecol": [
+    {
+      "label": "100",
+      "class": [
+        "col-xs-12"
+      ]
+    }
+    ],
       "twocol": [
         {
           "label": "25/75",

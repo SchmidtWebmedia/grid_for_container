@@ -1,9 +1,10 @@
 <html data-namespace-typo3-fluid="true"
-	  xmlns:grid="http://typo3.org/ns/SchmidtWebmedia/GridForContainer/ViewHelpers"
->
-<a href="{editLink.url -> f:format.raw()}" title="{editLink.title}">
-	{bodytext -> f:format.nl2br() -> f:format.stripTags()}
-</a>
-<strong>{f:translate(key: 'grid.label.colratio', extensionName: 'grid_for_container')}:</strong> {grid:grid(type: 'colLabel', grid_config: '{grid_config}', layout:'{CType}')}
-{tx_container_grid -> f:format.raw()}
+		xmlns:grid="http://typo3.org/ns/SchmidtWebmedia/GridForContainer/ViewHelpers"
+	>
+	<a href="{editLink.url -> f:format.raw()}" title="{editLink.title}">
+		{bodytext -> f:format.nl2br() -> f:format.stripTags()}
+	</a>
+	<strong>{f:translate(key: 'grid.label.colratio', extensionName: 'grid_for_container')}:</strong>
+	{grid:grid(type: 'colLabel', grid_config: '{grid_config}', layout:'{CType}')}
+	{tx_container_grid -> f:format.raw()}
 </html>

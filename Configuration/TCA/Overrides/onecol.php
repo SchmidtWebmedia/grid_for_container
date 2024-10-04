@@ -44,7 +44,7 @@ $showItem = $GLOBALS['TCA']['tt_content']['types']['onecol']['showitem'];
 $GLOBALS['TCA']['tt_content']['types']['onecol']['showitem'] = '
  --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;;general,
-        --palette--;;headers,               
+        --palette--;;headers,
         grid_config;LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:grid.label.colratio,
     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
         --palette--;;frames,
@@ -60,5 +60,3 @@ $GLOBALS['TCA']['tt_content']['types']['onecol']['showitem'] = '
         rowDescription,
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
 ';
-
-

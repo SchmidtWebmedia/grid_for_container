@@ -1,6 +1,8 @@
 <?php
-namespace SchmidtWebmedia\GridForContainer\Utility;
 
+declare(strict_types=1);
+
+namespace SchmidtWebmedia\GridForContainer\Utility;
 
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
