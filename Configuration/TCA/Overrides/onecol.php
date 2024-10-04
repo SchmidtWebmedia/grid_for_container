@@ -17,7 +17,7 @@ GeneralUtility::makeInstance(Registry::class)->configureContainer(
             ]]
         )
     )
-        ->setIcon('grid-for-container-onecol')
+        ->setIcon('EXT:container/Resources/Public/Icons/container-1col.svg')
         ->setBackendTemplate('EXT:grid_for_container/Resources/Private/Container/Templates/Backend.html')
         ->setSaveAndCloseInNewContentElementWizard(true)
 );

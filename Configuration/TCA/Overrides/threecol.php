@@ -19,7 +19,7 @@ GeneralUtility::makeInstance(Registry::class)->configureContainer(
             ]]
         )
     )
-        ->setIcon('grid-for-container-threecol')
+        ->setIcon('EXT:container/Resources/Public/Icons/container-3col.svg')
         ->setBackendTemplate('EXT:grid_for_container/Resources/Private/Container/Templates/Backend.html')
         ->setSaveAndCloseInNewContentElementWizard(true)
 );
