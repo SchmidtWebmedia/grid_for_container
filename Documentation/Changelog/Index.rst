@@ -6,6 +6,16 @@ Changelog
 =========
 All notable changes to this project will be documented in this file.
 
+[Unreleased]
+
+**Added**
+
+- Add TYPO3 v13 Support
+
+**Changed**
+
+- Code improvements, thanks to @xerc
+
 [2.1.1] - 2023-04-26
 ^^^^^^^^^^^^^^^^^^^^
 

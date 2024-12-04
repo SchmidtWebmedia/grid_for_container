@@ -9,7 +9,7 @@ use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 class GridViewHelper extends AbstractViewHelper
 {
-    private static $GridConfiguration;
+    private static ?array $GridConfiguration = null;
 
     public function initializeArguments() : void {
         $this->registerArgument('type', 'string', 'col, row or colLabel', true);
