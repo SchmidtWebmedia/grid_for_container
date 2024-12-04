@@ -2,8 +2,8 @@
 
 
 
-[![TYPO3](https://img.shields.io/badge/TYPO3-^10.4_||_^11.5-green)](https://typo3.org/)
-[![Container](https://img.shields.io/badge/Container-^1_||_^2-green)](https://extensions.typo3.org/extension/container)
+[![TYPO3](https://img.shields.io/badge/TYPO3-^11.5_||_^12.4_||_^13.4-green)](https://typo3.org/)
+[![Container](https://img.shields.io/badge/Container-^3-green)](https://extensions.typo3.org/extension/container)
 
 ## Description
 

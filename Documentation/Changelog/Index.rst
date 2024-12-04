@@ -6,7 +6,8 @@ Changelog
 =========
 All notable changes to this project will be documented in this file.
 
-[Unreleased]
+[3.0.0] - 2024-12-04
+^^^^^^^^^^^^^^^^^^^^
 
 **Added**
 
