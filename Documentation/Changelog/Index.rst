@@ -16,6 +16,10 @@ All notable changes to this project will be documented in this file.
 
 - Code improvements, thanks to @xerc
 
+**Remove**
+
+- Remove Container ^2
+
 [2.1.1] - 2023-04-26
 ^^^^^^^^^^^^^^^^^^^^
 
