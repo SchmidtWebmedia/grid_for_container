@@ -6,6 +6,15 @@ Changelog
 =========
 All notable changes to this project will be documented in this file.
 
+[3.1.0] - 2025-01-05
+^^^^^^^^^^^^^^^^^^^^
+
+**Added**
+
+- Choose relevant column grids in extension settings
+- Add five and six column grids
+
+
 [3.0.0] - 2024-12-04
 ^^^^^^^^^^^^^^^^^^^^
 

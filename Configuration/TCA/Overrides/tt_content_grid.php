@@ -34,14 +34,41 @@ $cTypes = [
         'title' => 'fourcols',
         'label' => 'fourthColumn'
     ],
+    'fivecol' => [
+        'columns' => [
+            'firstColumn',
+            'secondColumn',
+            'thirdColumn',
+            'fourthColumn',
+            'fifthColumn'
+        ],
+        'title' => 'fivecols',
+        'label' => 'fifthColumn'
+    ],
+    'sixcol' => [
+        'columns' => [
+            'firstColumn',
+            'secondColumn',
+            'thirdColumn',
+            'fourthColumn',
+            'fifthColumn',
+            'sixthColumn'
+        ],
+        'title' => 'sixcols',
+        'label' => 'sixthColumn'
+    ]
 ];
 
 use B13\Container\Tca\ContainerConfiguration;
 use B13\Container\Tca\Registry;
+use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 $registry = GeneralUtility::makeInstance(Registry::class);
+$extensionConfiguration = GeneralUtility::makeInstance(ExtensionConfiguration::class);
+$enabledColumnsString = $extensionConfiguration->get('grid_for_container', 'enabledColumns');
+$enabledColumns = explode(',', $enabledColumnsString);
 
 $additionalColumns = [
     'grid_config' => [
@@ -59,7 +86,9 @@ ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalColumns);
 
 
 foreach ($cTypes as $cType => $value) {
-
+    if(!in_array($cType, $enabledColumns)) {
+        continue;
+    }
     $columns = [];
 
     for ($i = 0; $i < count($value['columns']); $i++) {

@@ -96,6 +96,52 @@
             "col-12 col-sm-6 col-md-6 col-lg-3"
           ]
         }
+      ],
+      "fivecol": [
+        {
+          "label": "auto",
+          "class": [
+            "col-12 col-sm-6 col-md-6 col-lg",
+            "col-12 col-sm-6 col-md-6 col-lg",
+            "col-12 col-sm-6 col-md-6 col-lg",
+            "col-12 col-sm-6 col-md-6 col-lg",
+            "col-12 col-sm-6 col-md-6 col-lg"
+          ]
+        },
+        {
+          "label": "16/16/36/16/16",
+          "class": [
+            "col-12 col-sm-6 col-md-6 col-lg-2",
+            "col-12 col-sm-6 col-md-6 col-lg-2",
+            "col-12 col-sm-6 col-md-6 col-lg-4",
+            "col-12 col-sm-6 col-md-6 col-lg-2",
+            "col-12 col-sm-6 col-md-6 col-lg-2"
+          ]
+        }
+      ],
+      "sixcol": [
+        {
+          "label": "auto",
+          "class": [
+            "col-12 col-sm-6 col-md-4 col-lg",
+            "col-12 col-sm-6 col-md-4 col-lg",
+            "col-12 col-sm-6 col-md-4 col-lg",
+            "col-12 col-sm-6 col-md-4 col-lg",
+            "col-12 col-sm-6 col-md-4 col-lg",
+            "col-12 col-sm-6 col-md-4 col-lg"
+          ]
+        },
+        {
+          "label": "16/16/16/16/16/16",
+          "class": [
+            "col-12 col-sm-6 col-md-4 col-lg-2",
+            "col-12 col-sm-6 col-md-4 col-lg-2",
+            "col-12 col-sm-6 col-md-4 col-lg-2",
+            "col-12 col-sm-6 col-md-4 col-lg-2",
+            "col-12 col-sm-6 col-md-4 col-lg-2",
+            "col-12 col-sm-6 col-md-4 col-lg-2"
+          ]
+        }
       ]
     }
   ],

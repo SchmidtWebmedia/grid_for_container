@@ -27,6 +27,19 @@
 			<trans-unit id="fourcols.description">
 				<source>Add a 4 columns grid</source>
 			</trans-unit>
+			<trans-unit id="fivecols.title">
+				<source>5 column</source>
+			</trans-unit>
+			<trans-unit id="fivecols.description">
+				<source>Add a 5 column grid</source>
+			</trans-unit>
+			<trans-unit id="sixcols.title">
+				<source>6 column</source>
+			</trans-unit>
+			<trans-unit id="sixcols.description">
+				<source>Add a 6 column grid</source>
+			</trans-unit>
+
 
 			<trans-unit id="backend.firstColumn">
 				<source>First column</source>
@@ -39,6 +52,12 @@
 			</trans-unit>
 			<trans-unit id="backend.fourthColumn">
 				<source>Fourth column</source>
+			</trans-unit>
+			<trans-unit id="backend.fifthColumn">
+				<source>Fifth column</source>
+			</trans-unit>
+			<trans-unit id="backend.sixthColumn">
+				<source>Sixth column</source>
 			</trans-unit>
 
 			<trans-unit id="grid.twocols.title">
@@ -54,6 +73,10 @@
 
 			<trans-unit id="extsettings.gridTheme">
 				<source>Prepared Grid Theme</source>
+			</trans-unit>
+
+			<trans-unit id="extsettings.enabledColumns">
+				<source>Enabled columns</source>
 			</trans-unit>
 
 		</body>

@@ -9,3 +9,5 @@ tt_content.onecol {
 tt_content.twocol =< tt_content.onecol
 tt_content.threecol =< tt_content.onecol
 tt_content.fourthcol =< tt_content.onecol
+tt_content.fivecol =< tt_content.onecol
+tt_content.sixcol =< tt_content.onecol

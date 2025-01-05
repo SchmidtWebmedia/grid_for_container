@@ -26,6 +26,8 @@ As a TYPO3 you have to choose between four grid options:
 - 2 column grid
 - 3 column grid
 - 4 column grid
+- 5 column grid
+- 6 column grid
 
 Regarding the framework configuration you can choose for example between:
 

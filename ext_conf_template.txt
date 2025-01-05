@@ -3,3 +3,6 @@ gridTheme = bs45
 
 # cat=basic; type=string; label=LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:extsettings.gridConfig
 gridConfig =
+
+# cat=basic; type=string; label=LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:extsettings.enabledColumns
+enabledColumns = onecol,twocol,threecol,fourthcol
