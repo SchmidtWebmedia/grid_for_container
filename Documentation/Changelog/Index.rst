@@ -6,6 +6,13 @@ Changelog
 =========
 All notable changes to this project will be documented in this file.
 
+[3.1.1] - 2025-03-10
+^^^^^^^^^^^^^^^^^^^^
+
+**Fixed**
+
+- Correct path for Extension Icon set
+
 [3.1.0] - 2025-01-05
 ^^^^^^^^^^^^^^^^^^^^
 
