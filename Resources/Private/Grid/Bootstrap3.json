@@ -99,5 +99,15 @@
     {
       "class": "row"
     }
+  ],
+  "container": [
+    {
+      "label": "Container",
+      "class": "container"
+    },
+    {
+      "label": "Container-Fluid",
+      "class": "container-fluid"
+    }
   ]
 }

@@ -6,8 +6,12 @@ tt_content.onecol {
 	templateName = GridColumns
 	dataProcessing.13 = B13\Container\DataProcessing\ContainerProcessor
 }
+
 tt_content.twocol =< tt_content.onecol
 tt_content.threecol =< tt_content.onecol
 tt_content.fourthcol =< tt_content.onecol
 tt_content.fivecol =< tt_content.onecol
 tt_content.sixcol =< tt_content.onecol
+
+tt_content.container =< tt_content.onecol
+tt_content.container.templateName = GridContainer

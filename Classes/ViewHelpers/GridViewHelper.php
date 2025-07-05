@@ -12,7 +12,7 @@ class GridViewHelper extends AbstractViewHelper
     private static ?array $GridConfiguration = null;
 
     public function initializeArguments() : void {
-        $this->registerArgument('type', 'string', 'col, row or colLabel', true);
+        $this->registerArgument('type', 'string', 'container, col, row or colLabel', true);
         $this->registerArgument('layout', 'string', 'Name of CType');
         $this->registerArgument('colIndex', 'int', 'Index of Column');
         $this->registerArgument('grid_config', 'int', 'Stored Grid_config value');
@@ -35,6 +35,12 @@ class GridViewHelper extends AbstractViewHelper
                 $layout = $this->arguments['layout'];
                 $ratio = $this->arguments['grid_config'];
                 return self::$GridConfiguration['cols'][0][$layout][$ratio]['label'] ?? 'auto';
+            case 'containerLabel':
+                $ratio = $this->arguments['grid_config'];
+                return self::$GridConfiguration['container'][$ratio]['label'] ?? 'Container';
+            case 'container':
+                $ratio = $this->arguments['grid_config'];
+                return self::$GridConfiguration['container'][$ratio]['class'] ?? 'container';
         }
 
         return $this->arguments['type'];

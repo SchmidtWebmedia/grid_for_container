@@ -5,9 +5,16 @@
 	<a href="{editLink.url -> f:format.raw()}" title="{editLink.title}">
 		{bodytext -> f:format.nl2br() -> f:format.stripTags()}
 	</a>
-	<strong>{f:translate(key: 'grid.label.colratio', extensionName: 'grid_for_container')}:</strong>
-
-	{grid:grid(type: 'colLabel', grid_config: '{containerRecord.grid_config}', layout:'{containerRecord.CType}')}
+	<f:if condition="{containerRecord.CType} == 'container'">
+		<f:then>
+			<strong>{f:translate(key: 'grid.label.container_type', extensionName: 'grid_for_container')}:</strong>
+			{grid:grid(type: 'containerLabel', grid_config: '{containerRecord.grid_config}', layout:'{containerRecord.CType}')}
+		</f:then>
+		<f:else>
+			<strong>{f:translate(key: 'grid.label.colratio', extensionName: 'grid_for_container')}:</strong>
+			{grid:grid(type: 'colLabel', grid_config: '{containerRecord.grid_config}', layout:'{containerRecord.CType}')}
+		</f:else>
+	</f:if>
 
 	<f:if condition="{grid}">
 		<f:render partial="PageLayout/Grid" arguments="{_all}" />

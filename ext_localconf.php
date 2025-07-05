@@ -34,3 +34,8 @@ $iconRegistry->registerIcon(
     BitmapIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/sixcol.svg']
 );
+$iconRegistry->registerIcon(
+    'grid-for-container-container',
+    BitmapIconProvider::class,
+    ['source' => 'EXT:grid_for_container/Resources/Public/Icons/container.svg']
+);

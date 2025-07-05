@@ -10,7 +10,7 @@ class GridController
 {
     private static ?array $GridConfiguration = null;
 
-    public function getColumnOptions($config) : array {
+    public function getColumnOptions(array &$config) : array {
         return $this->getColumnRatio($config);
     }
 
@@ -24,6 +24,11 @@ class GridController
         self::readJSON();
         $fieldName = $config['row']['CType'][0];
         $columnRatioList = [];
+
+        if($fieldName === 'container') {
+            return $this->getContainerRatio($config);
+        }
+
         if(isset(self::$GridConfiguration['cols'][0][$fieldName])) {
             foreach (self::$GridConfiguration['cols'][0][$fieldName] as $key => $value) {
                 $columnRatioList[] = [$value['label'], $key];
@@ -33,6 +38,17 @@ class GridController
         }
 
         $config['items'] = array_merge($config['items'], $columnRatioList);
+        return $config;
+    }
+
+    private function getContainerRatio($config) : array {
+        self::readJSON();
+        $containerConfigurations = [];
+        foreach (self::$GridConfiguration['container'] as $key => $value) {
+            $containerConfigurations[] = [$value['label'], $key];
+        }
+
+        $config['items'] = array_merge($config['items'], $containerConfigurations);
         return $config;
     }
 }

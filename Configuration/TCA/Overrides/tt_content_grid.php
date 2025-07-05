@@ -5,7 +5,8 @@ $cTypes = [
             'firstColumn'
         ],
         'title' => 'onecols',
-        'label' => 'firstColumn'
+        'label' => 'firstColumn',
+        'isContainer' => false
     ],
     'twocol' => [
         'columns' => [
@@ -13,7 +14,8 @@ $cTypes = [
             'secondColumn'
         ],
         'title' => 'twocols',
-        'label' => 'secondColumn'
+        'label' => 'secondColumn',
+        'isContainer' => false
     ],
     'threecol' => [
         'columns' => [
@@ -22,7 +24,8 @@ $cTypes = [
             'thirdColumn'
         ],
         'title' => 'threecols',
-        'label' => 'thirdColumn'
+        'label' => 'thirdColumn',
+        'isContainer' => false
     ],
     'fourthcol' => [
         'columns' => [
@@ -32,7 +35,8 @@ $cTypes = [
             'fourthColumn'
         ],
         'title' => 'fourcols',
-        'label' => 'fourthColumn'
+        'label' => 'fourthColumn',
+        'isContainer' => false
     ],
     'fivecol' => [
         'columns' => [
@@ -43,7 +47,8 @@ $cTypes = [
             'fifthColumn'
         ],
         'title' => 'fivecols',
-        'label' => 'fifthColumn'
+        'label' => 'fifthColumn',
+        'isContainer' => false
     ],
     'sixcol' => [
         'columns' => [
@@ -55,7 +60,16 @@ $cTypes = [
             'sixthColumn'
         ],
         'title' => 'sixcols',
-        'label' => 'sixthColumn'
+        'label' => 'sixthColumn',
+        'isContainer' => false
+    ],
+    'container' => [
+        'columns' => [
+            'container'
+        ],
+        'title' => 'container',
+        'label' => 'container',
+        'isContainer' => true
     ]
 ];
 
@@ -116,11 +130,15 @@ foreach ($cTypes as $cType => $value) {
 
     $showItem = $GLOBALS['TCA']['tt_content']['types'][$cType]['showitem'];
 
+    $labelKey = $value['isContainer']
+        ? 'grid.label.container_type'
+        : 'grid.label.colratio';
+
     $GLOBALS['TCA']['tt_content']['types'][$cType]['showitem'] = '
  --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
         --palette--;;general,
         --palette--;;headers,
-        grid_config;LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:grid.label.colratio,
+        grid_config;LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:'.$labelKey.',
     --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
         --palette--;;frames,
         --palette--;;appearanceLinks,
@@ -136,8 +154,3 @@ foreach ($cTypes as $cType => $value) {
     --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
 ';
 }
-
-
-
-
-

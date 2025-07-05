@@ -40,7 +40,6 @@
 				<source>Add a 6 column grid</source>
 			</trans-unit>
 
-
 			<trans-unit id="backend.firstColumn">
 				<source>First column</source>
 			</trans-unit>
@@ -66,6 +65,17 @@
 			<trans-unit id="grid.label.colratio">
 				<source>Grid Ratio</source>
 			</trans-unit>
+
+			<trans-unit id="container.title">
+				<source>Container</source>
+			</trans-unit>
+			<trans-unit id="container.description">
+				<source>Add a container frame</source>
+			</trans-unit>
+			<trans-unit id="grid.label.container_type">
+				<source>Container type</source>
+			</trans-unit>
+
 
 			<trans-unit id="extsettings.gridConfig">
 				<source>Path to custom Grid Config JSON: Add path here, if you selected theme 'customized'</source>
