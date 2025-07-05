@@ -6,6 +6,13 @@ Changelog
 =========
 All notable changes to this project will be documented in this file.
 
+[Unreleased]
+^^^^^^^^^^^^
+
+**Added**
+
+- Add new CType 'container'
+
 [3.1.1] - 2025-03-10
 ^^^^^^^^^^^^^^^^^^^^
 
