@@ -106,9 +106,10 @@ foreach ($cTypes as $cType => $value) {
     $columns = [];
 
     for ($i = 0; $i < count($value['columns']); $i++) {
+        $colPos = $value['isContainer'] ? 300 : 200;
         $columns[] = [
             'name' => 'LLL:EXT:grid_for_container/Resources/Private/Language/locallang.xlf:backend.' . $value['columns'][$i],
-            'colPos' => (200 + ($i + 1))
+            'colPos' => ($colPos + ($i + 1))
         ];
     }
 
