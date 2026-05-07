@@ -23,27 +23,30 @@ class GridViewHelper extends AbstractViewHelper
      */
     public function render() : string {
         self::readJSON();
-        switch($this->arguments['type']) {
-            case 'row':
-                return self::$GridConfiguration['row'][0]['class'] ?? 'row';
-            case 'col':
-                $layout = $this->arguments['layout'];
-                $ratio = $this->arguments['grid_config'];
-                $index = $this->arguments['colIndex'];
-                return self::$GridConfiguration['cols'][0][$layout][$ratio]['class'][$index] ?? 'col';
-            case 'colLabel':
-                $layout = $this->arguments['layout'];
-                $ratio = $this->arguments['grid_config'];
-                return self::$GridConfiguration['cols'][0][$layout][$ratio]['label'] ?? 'auto';
-            case 'containerLabel':
-                $ratio = $this->arguments['grid_config'];
-                return self::$GridConfiguration['container'][$ratio]['label'] ?? 'Container';
-            case 'container':
-                $ratio = $this->arguments['grid_config'];
-                return self::$GridConfiguration['container'][$ratio]['class'] ?? 'container';
-        }
+        if(self::$GridConfiguration !== null) {
+            switch($this->arguments['type']) {
+                case 'row':
+                    return self::$GridConfiguration['row'][0]['class'] ?? 'row';
+                case 'col':
+                    $layout = $this->arguments['layout'];
+                    $ratio = $this->arguments['grid_config'];
+                    $index = $this->arguments['colIndex'];
+                    return self::$GridConfiguration['cols'][0][$layout][$ratio]['class'][$index] ?? 'col';
+                case 'colLabel':
+                    $layout = $this->arguments['layout'];
+                    $ratio = $this->arguments['grid_config'];
+                    return self::$GridConfiguration['cols'][0][$layout][$ratio]['label'] ?? 'auto';
+                case 'containerLabel':
+                    $ratio = $this->arguments['grid_config'];
+                    return self::$GridConfiguration['container'][$ratio]['label'] ?? 'Container';
+                case 'container':
+                    $ratio = $this->arguments['grid_config'];
+                    return self::$GridConfiguration['container'][$ratio]['class'] ?? 'container';
+            }
 
-        return $this->arguments['type'];
+            return $this->arguments['type'];
+        }
+        return '';
     }
 
     private static function readJSON() : void {

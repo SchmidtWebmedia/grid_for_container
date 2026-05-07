@@ -1,41 +1,42 @@
 <?php
 // register icons
 use TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider;
+use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
 use TYPO3\CMS\Core\Imaging\IconRegistry;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 $iconRegistry = GeneralUtility::makeInstance(IconRegistry::class);
 $iconRegistry->registerIcon(
     'grid-for-container-onecol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/onecol.svg']
 );$iconRegistry->registerIcon(
     'grid-for-container-twocol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/twocol.svg']
 );
 $iconRegistry->registerIcon(
     'grid-for-container-threecol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/threecol.svg']
 );
 $iconRegistry->registerIcon(
     'grid-for-container-fourthcol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/fourthcol.svg']
 );
 $iconRegistry->registerIcon(
     'grid-for-container-fivecol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/fivecol.svg']
 );
 $iconRegistry->registerIcon(
     'grid-for-container-sixcol',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/sixcol.svg']
 );
 $iconRegistry->registerIcon(
     'grid-for-container-container',
-    BitmapIconProvider::class,
+    SvgIconProvider::class,
     ['source' => 'EXT:grid_for_container/Resources/Public/Icons/container.svg']
 );

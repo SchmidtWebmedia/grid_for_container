@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace SchmidtWebmedia\GridForContainer\Controller;
 
+use RuntimeException;
 use SchmidtWebmedia\GridForContainer\Utility\JsonUtility;
 
 class GridController
@@ -22,33 +23,39 @@ class GridController
 
     private function getColumnRatio($config) : array {
         self::readJSON();
-        $fieldName = $config['row']['CType'][0];
-        $columnRatioList = [];
+        if(self::$GridConfiguration !== null) {
+            $fieldName = $config['row']['CType'][0];
+            $columnRatioList = [];
 
-        if($fieldName === 'container') {
-            return $this->getContainerRatio($config);
-        }
-
-        if(isset(self::$GridConfiguration['cols'][0][$fieldName])) {
-            foreach (self::$GridConfiguration['cols'][0][$fieldName] as $key => $value) {
-                $columnRatioList[] = [$value['label'], $key];
+            if($fieldName === 'container') {
+                return $this->getContainerRatio($config);
             }
-        } else {
-            $columnRatioList[] = ['missing config', 0];
-        }
 
-        $config['items'] = array_merge($config['items'], $columnRatioList);
-        return $config;
+            if(isset(self::$GridConfiguration['cols'][0][$fieldName])) {
+                foreach (self::$GridConfiguration['cols'][0][$fieldName] as $key => $value) {
+                    $columnRatioList[] = [$value['label'], $key];
+                }
+            } else {
+                $columnRatioList[] = ['missing config', 0];
+            }
+
+            $config['items'] = array_merge($config['items'], $columnRatioList);
+            return $config;
+        }
+        return [];
     }
 
     private function getContainerRatio($config) : array {
         self::readJSON();
-        $containerConfigurations = [];
-        foreach (self::$GridConfiguration['container'] as $key => $value) {
-            $containerConfigurations[] = [$value['label'], $key];
-        }
+        if(self::$GridConfiguration !== null) {
+            $containerConfigurations = [];
+            foreach (self::$GridConfiguration['container'] as $key => $value) {
+                $containerConfigurations[] = [$value['label'], $key];
+            }
 
-        $config['items'] = array_merge($config['items'], $containerConfigurations);
-        return $config;
+            $config['items'] = array_merge($config['items'], $containerConfigurations);
+            return $config;
+        }
+        return [];
     }
 }
