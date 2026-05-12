@@ -12,6 +12,11 @@ All notable changes to this project will be documented in this file.
 **Added**
 
 - Add new CType 'container'
+- Add TYPO3 v14 Support
+
+**Changed**
+
+- Removed TYPO3 v11 Support
 
 [3.1.1] - 2025-03-10
 ^^^^^^^^^^^^^^^^^^^^
