@@ -1,12 +1,11 @@
 # Grid for Container
 
-[![Latest Stable Version](https://poser.pugx.org/schmidtwebmedia/grid-for-container/d/total.svg?style=flat-square)](https://extensions.typo3.org/extension/grid_for_container)
-[![TYPO3 11](https://img.shields.io/badge/TYPO3-11-orange.svg?style=flat-square&logo=typo3&labelColor=292929&color=ff8700)](https://get.typo3.org/version/11)
 [![TYPO3 12](https://img.shields.io/badge/TYPO3-12-orange.svg?style=flat-square&logo=typo3&labelColor=292929&color=ff8700)](https://get.typo3.org/version/12)
-[![TYPO3 12](https://img.shields.io/badge/TYPO3-13-orange.svg?style=flat-square&logo=typo3&labelColor=292929&color=ff8700)](https://get.typo3.org/version/13)
-[![Container](https://img.shields.io/badge/Container-^3-green)](https://extensions.typo3.org/extension/container)
+[![TYPO3 13](https://img.shields.io/badge/TYPO3-13-orange.svg?style=flat-square&logo=typo3&labelColor=292929&color=ff8700)](https://get.typo3.org/version/13)
+[![TYPO3 14](https://img.shields.io/badge/TYPO3-14-orange.svg?style=flat-square&logo=typo3&labelColor=292929&color=ff8700)](https://get.typo3.org/version/14)
+[![Container](https://img.shields.io/badge/Container-^4-green)](https://extensions.typo3.org/extension/container)
 
-[![Total Downloads](https://poser.pugx.org/schmidtwebmedia/grid-for-container/d/total.svg?style=flat-square)](https://packagist.org/packages/schmidtwebmedia/grid-for-container)
+[![Latest Stable Version](https://poser.pugx.org/schmidtwebmedia/grid-for-container/d/total.svg?style=flat-square)](https://extensions.typo3.org/extension/grid_for_container)
 [![Monthly Downloads](https://poser.pugx.org/schmidtwebmedia/grid-for-container/d/monthly?style=flat-square)](https://packagist.org/packages/schmidtwebmedia/grid-for-container)
 
 <a href="https://www.buymeacoffee.com/schmidtwebmedia" target="_blank">
